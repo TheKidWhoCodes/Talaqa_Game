@@ -8,7 +8,12 @@ public class SeniorProjectEditorTarget : TargetRules
 	public SeniorProjectEditorTarget(TargetInfo Target) : base(Target)
 	{
 		Type = TargetType.Editor;
-		DefaultBuildSettings = BuildSettingsVersion.V4;
+		
+		// Update build settings
+		DefaultBuildSettings = BuildSettingsVersion.Latest;
+		
+		// Update include order version
+		IncludeOrderVersion = EngineIncludeOrderVersion.Latest;
 
 		ExtraModuleNames.AddRange( new string[] { "SeniorProject" } );
 	}

@@ -2183,16 +2183,6 @@
   Runtime/Core/Public/Serialization/ArchiveCookData.h \
   Runtime/Core/Public/Templates/IsEnumClass.h \
   Runtime/Core/Public/UObject/ObjectVersion.h \
-  Runtime/Core/Public/Templates/Function.h \
-  Runtime/Core/Public/Misc/IntrusiveUnsetOptionalState.h \
-  Runtime/Core/Public/Misc/OptionalFwd.h \
-  Runtime/Core/Public/Templates/FunctionFwd.h \
-  Runtime/Core/Public/Templates/Invoke.h \
-  Runtime/Core/Public/Traits/MemberFunctionPtrOuter.h \
-  Runtime/Core/Public/Math/UnrealMathUtility.h \
-  Runtime/Core/Public/Templates/IsConstructible.h \
-  Runtime/Core/Public/Templates/IsInvocable.h \
-  Runtime/Core/Public/Templates/IsMemberPointer.h \
   Runtime/Core/Public/Serialization/MemoryImageWriter.h \
   Runtime/Core/Public/Serialization/MemoryLayout.h \
   Runtime/Core/Public/Concepts/StaticClassProvider.h \
@@ -2204,6 +2194,8 @@
   Runtime/Core/Public/Templates/IsAbstract.h \
   Runtime/Core/Public/Algo/Heapify.h \
   Runtime/Core/Public/Algo/Impl/BinaryHeap.h \
+  Runtime/Core/Public/Templates/Invoke.h \
+  Runtime/Core/Public/Traits/MemberFunctionPtrOuter.h \
   Runtime/Core/Public/Templates/ReversePredicate.h \
   Runtime/Core/Public/Templates/IdentityFunctor.h \
   Runtime/Core/Public/Templates/Less.h \
@@ -2214,9 +2206,9 @@
   Runtime/Core/Public/Concepts/GetTypeHashable.h \
   Runtime/Core/Public/Templates/Sorting.h \
   Runtime/Core/Public/Algo/Sort.h Runtime/Core/Public/Algo/IntroSort.h \
+  Runtime/Core/Public/Math/UnrealMathUtility.h \
   Runtime/Core/Public/Templates/AlignmentTemplates.h \
   Runtime/Core/Public/Traits/ElementType.h \
-  Runtime/Core/Public/Templates/MakeUnsigned.h \
   Runtime/Core/Public/Containers/UnrealString.h.inl \
   Runtime/Core/Public/Misc/StringFormatArg.h \
   Runtime/Core/Public/Containers/StringConv.h \

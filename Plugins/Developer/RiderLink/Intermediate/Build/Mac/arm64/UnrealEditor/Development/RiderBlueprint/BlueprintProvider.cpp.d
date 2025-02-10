@@ -1785,16 +1785,6 @@
   Runtime/Core/Public/Serialization/ArchiveCookData.h \
   Runtime/Core/Public/Templates/IsEnumClass.h \
   Runtime/Core/Public/UObject/ObjectVersion.h \
-  Runtime/Core/Public/Templates/Function.h \
-  Runtime/Core/Public/Misc/IntrusiveUnsetOptionalState.h \
-  Runtime/Core/Public/Misc/OptionalFwd.h \
-  Runtime/Core/Public/Templates/FunctionFwd.h \
-  Runtime/Core/Public/Templates/Invoke.h \
-  Runtime/Core/Public/Traits/MemberFunctionPtrOuter.h \
-  Runtime/Core/Public/Math/UnrealMathUtility.h \
-  Runtime/Core/Public/Templates/IsConstructible.h \
-  Runtime/Core/Public/Templates/IsInvocable.h \
-  Runtime/Core/Public/Templates/IsMemberPointer.h \
   Runtime/Core/Public/Serialization/MemoryImageWriter.h \
   Runtime/Core/Public/Serialization/MemoryLayout.h \
   Runtime/Core/Public/Concepts/StaticClassProvider.h \
@@ -1806,6 +1796,8 @@
   Runtime/Core/Public/Templates/IsAbstract.h \
   Runtime/Core/Public/Algo/Heapify.h \
   Runtime/Core/Public/Algo/Impl/BinaryHeap.h \
+  Runtime/Core/Public/Templates/Invoke.h \
+  Runtime/Core/Public/Traits/MemberFunctionPtrOuter.h \
   Runtime/Core/Public/Templates/ReversePredicate.h \
   Runtime/Core/Public/Templates/IdentityFunctor.h \
   Runtime/Core/Public/Templates/Less.h \
@@ -1816,9 +1808,9 @@
   Runtime/Core/Public/Concepts/GetTypeHashable.h \
   Runtime/Core/Public/Templates/Sorting.h \
   Runtime/Core/Public/Algo/Sort.h Runtime/Core/Public/Algo/IntroSort.h \
+  Runtime/Core/Public/Math/UnrealMathUtility.h \
   Runtime/Core/Public/Templates/AlignmentTemplates.h \
   Runtime/Core/Public/Traits/ElementType.h \
-  Runtime/Core/Public/Templates/MakeUnsigned.h \
   Runtime/Core/Public/Containers/UnrealString.h.inl \
   Runtime/Core/Public/Misc/StringFormatArg.h \
   Runtime/Core/Public/HAL/CriticalSection.h \
@@ -1834,14 +1826,17 @@
   Runtime/Core/Public/Containers/StringView.h \
   Runtime/Core/Public/String/Find.h \
   Runtime/Core/Public/Containers/ArrayView.h \
-  Runtime/Core/Public/Templates/IsConst.h \
+  Runtime/Core/Public/Templates/SharedPointer.h \
+  Runtime/Core/Public/Misc/IntrusiveUnsetOptionalState.h \
+  Runtime/Core/Public/Misc/OptionalFwd.h \
   Runtime/Core/Public/Templates/PointerIsConvertibleFromTo.h \
   Runtime/Core/Public/Templates/LosesQualifiersFromTo.h \
-  Runtime/Core/Public/Templates/SharedPointer.h \
   Runtime/Core/Public/Containers/Map.h \
   Runtime/Core/Public/Algo/Reverse.h \
   Runtime/Core/Public/Containers/Set.h \
   Runtime/Core/Public/Misc/StructBuilder.h \
+  Runtime/Core/Public/Templates/Function.h \
+  Runtime/Core/Public/Templates/FunctionFwd.h \
   Runtime/Core/Public/Containers/SparseArray.h \
   Runtime/Core/Public/Containers/ScriptArray.h \
   Runtime/Core/Public/Containers/BitArray.h \
@@ -1895,6 +1890,7 @@
   Runtime/Core/Public/Delegates/DelegateInstancesImpl.h \
   Runtime/Core/Public/Delegates/DelegateSignatureImpl.inl \
   Runtime/Core/Public/UObject/ScriptDelegates.h \
+  Runtime/Core/Public/Templates/IsConst.h \
   Runtime/Core/Public/Delegates/DelegateCombinations.h \
   Runtime/Core/Public/Async/Async.h Runtime/Core/Public/Async/Future.h \
   Runtime/Core/Public/Misc/DateTime.h Runtime/Core/Public/HAL/Event.h \
@@ -1906,8 +1902,7 @@
   Runtime/Core/Public/Async/TaskGraphInterfaces.h \
   Runtime/Core/Public/Containers/LockFreeList.h \
   Runtime/Core/Public/Misc/NoopCounter.h \
-  Runtime/Core/Public/Stats/Stats.h Runtime/Core/Public/Math/Color.h \
-  Runtime/Core/Public/Misc/Parse.h \
+  Runtime/Core/Public/Stats/Stats.h \
   Runtime/Core/Public/HAL/PlatformTime.h \
   Runtime/Core/Public/Mac/MacPlatformTime.h \
   Runtime/Core/Public/Apple/ApplePlatformTime.h \
@@ -1923,6 +1918,7 @@
   Runtime/Core/Public/ProfilingDebugging/TagTrace.h \
   Runtime/TraceLog/Public/Trace/Detail/LogScope.h \
   Runtime/TraceLog/Public/Trace/Detail/Writer.inl \
+  Runtime/Core/Public/Math/Color.h Runtime/Core/Public/Misc/Parse.h \
   Runtime/Core/Public/ProfilingDebugging/MiscTrace.h \
   Runtime/Core/Public/Stats/StatsTrace.h \
   Runtime/Core/Public/HAL/IConsoleManager.h \
@@ -1957,6 +1953,7 @@
   Runtime/TraceLog/Public/Trace/Detail/LogScope.inl \
   Runtime/Core/Public/Async/Fundamental/Task.h \
   Runtime/Core/Public/Async/Fundamental/TaskDelegate.h \
+  Runtime/Core/Public/Templates/IsInvocable.h \
   Runtime/Core/Public/Misc/ScopeExit.h \
   Runtime/Core/Public/Async/TaskGraphFwd.h \
   Runtime/Core/Public/Async/TaskTrace.h \
@@ -1989,6 +1986,7 @@
   Runtime/Core/Public/Internationalization/LocalizedTextSourceTypes.h \
   Runtime/Core/Public/Internationalization/StringTableCoreFwd.h \
   Runtime/Core/Public/Internationalization/ITextData.h \
+  Runtime/Core/Public/Templates/IsConstructible.h \
   Runtime/Core/Public/Internationalization/Internationalization.h \
   Runtime/Core/Public/Math/IntVector.h Runtime/Core/Public/Math/Axis.h \
   Runtime/Core/Public/Math/VectorRegister.h \
@@ -2013,9 +2011,7 @@
   Runtime/Core/Public/CoreMinimal.h \
   Runtime/Core/Public/Templates/IntegralConstant.h \
   Runtime/Core/Public/Templates/IsClass.h \
-  Runtime/Core/Public/Misc/Compression.h \
   Runtime/Core/Public/Misc/FrameNumber.h \
-  Runtime/Core/Public/Math/ColorList.h \
   Runtime/Core/Public/Math/IntRect.h \
   Runtime/Core/Public/Math/TwoVectors.h Runtime/Core/Public/Math/Edge.h \
   Runtime/Core/Public/Math/CapsuleShape.h \
@@ -2034,15 +2030,16 @@
   Runtime/Core/Public/Math/ScaleMatrix.h \
   Runtime/Core/Public/Math/MirrorMatrix.h \
   Runtime/Core/Public/Math/ClipProjectionMatrix.h \
+  Runtime/Core/Public/Math/ConvexHull2d.h \
+  Runtime/Core/Public/Math/UnrealMath.h \
+  Runtime/Core/Public/Math/ColorList.h \
+  Runtime/Core/Public/Math/CurveEdInterface.h \
   Runtime/Core/Public/Math/InterpCurvePoint.h \
+  Runtime/Core/Public/Math/Float16Color.h \
   Runtime/Core/Public/Math/InterpCurve.h \
   Runtime/Core/Public/Algo/MinElement.h \
   Runtime/Core/Public/Algo/Impl/RangePointerType.h \
-  Runtime/Core/Public/Math/CurveEdInterface.h \
-  Runtime/Core/Public/Math/Float16Color.h \
-  Runtime/Core/Public/Math/Vector2DHalf.h \
-  Runtime/Core/Public/Math/ConvexHull2d.h \
-  Runtime/Core/Public/Math/UnrealMath.h Runtime/Core/Public/Math/Ray.h \
+  Runtime/Core/Public/Math/Ray.h Runtime/Core/Public/Math/Vector2DHalf.h \
   Runtime/Core/Public/Async/Mutex.h Runtime/Core/Public/Async/LockTags.h \
   Runtime/Core/Public/Async/UniqueLock.h \
   Runtime/Core/Public/Async/InheritedContext.h \
@@ -2536,13 +2533,6 @@
   ../Intermediate/Build/Mac/UnrealEditor/Inc/PhysicsCore/UHT/ChaosEngineInterface.generated.h \
   Runtime/Engine/Public/WorldCollision.h \
   Runtime/PhysicsCore/Public/CollisionShape.h \
-  Runtime/Engine/Classes/Engine/OverlapResult.h \
-  Runtime/Engine/Classes/Engine/ActorInstanceHandle.h \
-  Runtime/CoreUObject/Public/UObject/WeakInterfacePtr.h \
-  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/ActorInstanceHandle.generated.h \
-  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/OverlapResult.generated.h \
-  Runtime/Engine/Classes/Engine/HitResult.h \
-  ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/HitResult.generated.h \
   Runtime/Engine/Classes/GameFramework/UpdateLevelVisibilityLevelInfo.h \
   ../Intermediate/Build/Mac/UnrealEditor/Inc/Engine/UHT/UpdateLevelVisibilityLevelInfo.generated.h \
   Runtime/Engine/Public/EngineDefines.h \
@@ -2613,12 +2603,12 @@
   Runtime/Engine/Public/UnrealEngine.h \
   Editor/UnrealEd/Classes/Editor/AssetReferenceFilter.h \
   Runtime/RHI/Public/RHIShaderPlatform.h \
-  Runtime/RHI/Public/RHIStaticShaderPlatformNames.h \
   ../Intermediate/Build/Mac/UnrealEditor/Inc/UnrealEd/UHT/EditorEngine.generated.h \
   Editor/UnrealEd/Classes/Editor/UnrealEdTypes.h \
   ../Intermediate/Build/Mac/UnrealEditor/Inc/UnrealEd/UHT/UnrealEdTypes.generated.h \
   Runtime/Engine/Classes/Engine/StaticMesh.h \
   Runtime/Core/Public/Async/AsyncWork.h \
+  Runtime/Core/Public/Misc/Compression.h \
   Runtime/CoreUObject/Public/UObject/StrongObjectPtr.h \
   Runtime/Engine/Classes/Interfaces/Interface_CollisionDataProvider.h \
   Runtime/PhysicsCore/Public/Interface_CollisionDataProviderCore.h \
